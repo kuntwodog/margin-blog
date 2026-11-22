@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>静态站点 on Margin · 陈默的博客</title><link>https://blog.htwok.cn/tags/%E9%9D%99%E6%80%81%E7%AB%99%E7%82%B9/</link><description>Recent content in 静态站点 on Margin · 陈默的博客</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 20 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.htwok.cn/tags/%E9%9D%99%E6%80%81%E7%AB%99%E7%82%B9/index.xml" rel="self" type="application/rss+xml"/><item><title>用 Hugo 搭建静态博客的几点体会</title><link>https://blog.htwok.cn/posts/static-site-notes/</link><pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate><guid>https://blog.htwok.cn/posts/static-site-notes/</guid><description>&lt;p&gt;最近把博客迁到了 Hugo，记录几点实际使用中的体会。&lt;/p&gt;
+&lt;h2 id="为什么选静态站点"&gt;为什么选静态站点&lt;/h2&gt;
+&lt;p&gt;动态博客（比如 WordPress、Typecho）功能强大，但需要服务器、数据库和持续维护。对个人博客来说，这些成本往往超过了收益。静态站点则相反：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;快&lt;/strong&gt;：纯 HTML，CDN 一分发，秒开&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;稳&lt;/strong&gt;：没有后端进程，不会因为服务挂掉而 500&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;省&lt;/strong&gt;：GitHub Pages、EdgeOne 等都有免费额度&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="hugo-的一点使用技巧"&gt;Hugo 的一点使用技巧&lt;/h2&gt;
+&lt;p&gt;Hugo 的速度确实名副其实，几百篇文章也是秒级构建。几个常用技巧：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 本地预览&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo server -D
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 构建生产版本&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo --minify
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;模板方面，建议从极简开始，先把 &lt;code&gt;baseof.html&lt;/code&gt;、&lt;code&gt;list.html&lt;/code&gt;、&lt;code&gt;single.html&lt;/code&gt; 三个基础模板写好，再逐步加功能。&lt;/p&gt;
+&lt;h2 id="关于主题"&gt;关于主题&lt;/h2&gt;
+&lt;p&gt;现成主题功能丰富，但也容易带来依赖和冗余。这次我选择自己写一套极简模板，CSS 变量做深浅色主题，无外部依赖，反而更可控。&lt;/p&gt;
+&lt;p&gt;适合自己的，才是最好的。&lt;/p&gt;</description></item></channel></rss>
