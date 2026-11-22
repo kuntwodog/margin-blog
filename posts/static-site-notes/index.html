@@ -1,0 +1,18 @@
+<!doctype html><html lang=zh-CN data-theme=light><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>用 Hugo 搭建静态博客的几点体会 · Margin · 陈默的博客</title><meta name=description content="记录代码、思考与灵感。全栈开发者，专注 Web 技术与开发者工具。"><link rel=stylesheet href=/style.css><script>(function(){var e=localStorage.getItem("margin-theme");e||(e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),document.documentElement.setAttribute("data-theme",e)})()</script></head><body><header class=site-header><div class="container header-inner"><a class=brand href=/><span class=brand-mark>M</span>
+<span class=brand-text>Margin</span></a><nav class=nav><a href=/>首页</a>
+<a href=/posts/ class=active>文章</a>
+<a href=/about/>关于</a>
+<a href=https://htwok.cn target=_blank rel=noopener>导航站 ↗</a>
+<button id=theme-toggle class=theme-toggle aria-label=切换主题 title=切换主题>
+<span class=icon-sun>☀</span><span class=icon-moon>☾</span></button></nav></div></header><main class=container><article class=post-single><header class=post-header><div class=post-meta><time>2026年02月20日</time>
+<span class=cat>技术</span></div><h1>用 Hugo 搭建静态博客的几点体会</h1><div class=post-tags><span class=tag>#Hugo</span><span class=tag>#静态站点</span><span class=tag>#工具</span></div></header><div class=post-content><p>最近把博客迁到了 Hugo，记录几点实际使用中的体会。</p><h2 id=为什么选静态站点>为什么选静态站点</h2><p>动态博客（比如 WordPress、Typecho）功能强大，但需要服务器、数据库和持续维护。对个人博客来说，这些成本往往超过了收益。静态站点则相反：</p><ol><li><strong>快</strong>：纯 HTML，CDN 一分发，秒开</li><li><strong>稳</strong>：没有后端进程，不会因为服务挂掉而 500</li><li><strong>省</strong>：GitHub Pages、EdgeOne 等都有免费额度</li></ol><h2 id=hugo-的一点使用技巧>Hugo 的一点使用技巧</h2><p>Hugo 的速度确实名副其实，几百篇文章也是秒级构建。几个常用技巧：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e># 本地预览</span>
+</span></span><span style=display:flex><span>hugo server -D
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 构建生产版本</span>
+</span></span><span style=display:flex><span>hugo --minify
+</span></span></code></pre></div><p>模板方面，建议从极简开始，先把 <code>baseof.html</code>、<code>list.html</code>、<code>single.html</code> 三个基础模板写好，再逐步加功能。</p><h2 id=关于主题>关于主题</h2><p>现成主题功能丰富，但也容易带来依赖和冗余。这次我选择自己写一套极简模板，CSS 变量做深浅色主题，无外部依赖，反而更可控。</p><p>适合自己的，才是最好的。</p></div><nav class=post-nav><a class=prev href=/posts/hello-margin/>← 你好，Margin</a>
+<a class=next href=/posts/edgeone-cdn-practice/>用 EdgeOne 给网站做国内加速 →</a></nav></article></main><footer class=site-footer><div class="container footer-inner"><div class=footer-left><span>© 2026 陈默</span>
+<span class=dot>·</span>
+<span>写代码，也写生活</span></div><div class=footer-links><a href=https://github.com/kuntwodog target=_blank rel=noopener>GitHub</a>
+<a href=mailto:hello@chenmo.dev>邮箱</a>
+<a href=https://htwok.cn target=_blank rel=noopener>导航站</a></div><div class=footer-powered>Powered by Hugo</div></div></footer><script src=/script.js></script></body></html>
