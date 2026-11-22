@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>开始 on Margin · 陈默的博客</title><link>https://blog.htwok.cn/tags/%E5%BC%80%E5%A7%8B/</link><description>Recent content in 开始 on Margin · 陈默的博客</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.htwok.cn/tags/%E5%BC%80%E5%A7%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>你好，Margin</title><link>https://blog.htwok.cn/posts/hello-margin/</link><pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate><guid>https://blog.htwok.cn/posts/hello-margin/</guid><description>&lt;p&gt;欢迎来到 Margin，这是我的个人博客。&lt;/p&gt;
+&lt;h2 id="为什么又开一个博客"&gt;为什么又开一个博客&lt;/h2&gt;
+&lt;p&gt;折腾过不少建站方案，从静态页面到动态博客，最后发现最让人安心的还是&lt;strong&gt;纯静态&lt;/strong&gt;——没有数据库、没有运行时、没有需要维护的进程，写好 Markdown，构建一下，丢到托管平台就完事。稳定、快速、省心。&lt;/p&gt;
+&lt;p&gt;这里我会记录三类内容：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;技术学习的笔记与思考&lt;/li&gt;
+&lt;li&gt;做过的项目与工具&lt;/li&gt;
+&lt;li&gt;一些关于生活和效率的想法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="关于名字"&gt;关于名字&lt;/h2&gt;
+&lt;p&gt;Margin 意为「页边空白」。留白是设计里很重要的东西，生活也是。希望这个博客能成为我思考的留白处。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;写代码，也写生活。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;如果你恰好读到了这里，欢迎通过邮箱或 GitHub 与我交流。&lt;/p&gt;</description></item></channel></rss>
