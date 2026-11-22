@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网络 on Margin · 陈默的博客</title><link>https://blog.htwok.cn/tags/%E7%BD%91%E7%BB%9C/</link><description>Recent content in 网络 on Margin · 陈默的博客</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.htwok.cn/tags/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>用 EdgeOne 给网站做国内加速</title><link>https://blog.htwok.cn/posts/edgeone-cdn-practice/</link><pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate><guid>https://blog.htwok.cn/posts/edgeone-cdn-practice/</guid><description>&lt;p&gt;站点托管在 GitHub Pages，国内访问速度不理想，于是接了腾讯云 EdgeOne 免费版做加速。&lt;/p&gt;
+&lt;h2 id="基本思路"&gt;基本思路&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;DNS 用 DNSPod，把域名 CNAME 到 EdgeOne 分配的 &lt;code&gt;eo.dnse2.com&lt;/code&gt; 地址&lt;/li&gt;
+&lt;li&gt;EdgeOne 里配置加速域名，源站指向 GitHub Pages&lt;/li&gt;
+&lt;li&gt;申请免费证书，开启强制 HTTPS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这样访客走 EdgeOne 的国内节点，回源才走 GitHub Pages，速度从原来的秒级降到 0.1 秒左右。&lt;/p&gt;
+&lt;h2 id="几个坑"&gt;几个坑&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;证书签发要等&lt;/strong&gt;：申请免费证书后，边缘节点完全生效需要几分钟，期间可能返回默认证书，耐心等即可。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;显性 URL 转发不支持 HTTPS&lt;/strong&gt;：如果要接 CDN，源站记录要用 CNAME，别用 URL 转发。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DNS 缓存&lt;/strong&gt;：切换解析后，本地和运营商 DNS 可能还缓存着旧 IP，导致看到旧的错误页。手机切一次飞行模式通常就好了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="结果"&gt;结果&lt;/h2&gt;
+&lt;p&gt;配置完成后，&lt;code&gt;htwok.cn&lt;/code&gt; 和 &lt;code&gt;www&lt;/code&gt; 都走国内节点，HTTPS 稳定，速度令人满意。这类免费 CDN + 静态托管的组合，对个人站来说性价比很高。&lt;/p&gt;</description></item></channel></rss>
