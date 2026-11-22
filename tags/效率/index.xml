@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>效率 on Margin · 陈默的博客</title><link>https://blog.htwok.cn/tags/%E6%95%88%E7%8E%87/</link><description>Recent content in 效率 on Margin · 陈默的博客</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.htwok.cn/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml"/><item><title>我常用的几个开发者工具</title><link>https://blog.htwok.cn/posts/dev-tools/</link><pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.htwok.cn/posts/dev-tools/</guid><description>&lt;p&gt;分享几个日常开发中离不开的工具。&lt;/p&gt;
+&lt;h2 id="命令行"&gt;命令行&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;fzf&lt;/strong&gt;：模糊搜索，配合 &lt;code&gt;Ctrl+R&lt;/code&gt; 搜历史命令，效率翻倍&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;tmux&lt;/strong&gt;：终端复用， SSH 断线也能保持会话&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ripgrep&lt;/strong&gt;：比 grep 快一个数量级的代码搜索&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="编辑器"&gt;编辑器&lt;/h2&gt;
+&lt;p&gt;VS Code 配几个趁手的插件就够了。主题用过很多，最后还是回到了极简的浅色主题——长时间看代码，护眼比花哨重要。&lt;/p&gt;
+&lt;h2 id="思考"&gt;思考&lt;/h2&gt;
+&lt;p&gt;工具的价值在于顺手，而不是多。与其收藏一百个效率工具，不如把三五个用到极致。定期清理工具链，保留真正常用的，反而更专注。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;工具应该服务于思考，而不是成为思考的负担。&lt;/p&gt;&lt;/blockquote&gt;</description></item></channel></rss>
